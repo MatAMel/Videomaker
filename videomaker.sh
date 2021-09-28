@@ -6,7 +6,7 @@ BACKUPDIR=$( ls -td -- /mnt/motioneye/Camera2-Door/*/ | sed -n 2p)
 cd $BACKUPDIR
 
 #Dividing picture files into folders with 10000 files each named "dir_001" "dir_002" ...
-i=0; 
+i=0
 for f in *; 
 do 
     d=dir_$(printf %03d $((i/10000+1))); 
